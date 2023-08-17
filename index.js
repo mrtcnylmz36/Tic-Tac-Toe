@@ -67,11 +67,11 @@ function addScore(p1, p2) {
         player1Score.innerText = player1WinCount;
         player2Score.innerText = player2WinCount;
 
-        if (player1WinCount > player1WinCount) {
+        if (player1WinCount > player2WinCount) {
+            message.innerText = "Tebrikler X Kazandı"
+        } else if(player1WinCount < player2WinCount) {
             message.innerText = "Tebrikler O Kazandı"
-        } else if(player1WinCount > player1WinCount) {
-            message.innerText = "Tebrikler x Kazandı"
-        } else if(player1WinCount == player1WinCount){
+        } else if(player1WinCount == player2WinCount){
             message.innerText = "Oyun Berabere"
         }
 
